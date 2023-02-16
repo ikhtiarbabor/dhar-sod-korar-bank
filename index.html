@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baborer Dhar Shod Kora bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- form Part  -->
+    <section class="">
+      <h1 class="font-extrabold font-serif text-center text-6xl w-full">
+        Baborer Dhar Shod Kora bank
+      </h1>
+      <div class="bg-amber-500 text-center">
+        <h2>Login</h2>
+        <div class="w-1/2 mx-auto py-14">
+          <input
+            class="block w-full my-5"
+            type="email"
+            id="email-field"
+            placeholder="Email:example@example.com"
+          />
+          <input
+            class="block w-full"
+            type="password"
+            id="pass-field"
+            placeholder="Password:example"
+          />
+          <button class="px-5 py-2 bg-yellow-100 mt-5" id="submit-btn">
+            Submit
+          </button>
+        </div>
+      </div>
+    </section>
+    <script>
+      document
+        .getElementById('submit-btn')
+        .addEventListener('click', function () {
+          // get email vale
+          const emailField = document.getElementById('email-field'); //get pass value
+          const passField = document.getElementById('pass-field');
+          if (
+            emailField.value == 'example@example.com' &&
+            passField.value == 'example'
+          ) {
+            window.location.href = 'dashboard.html';
+          } else {
+            alert('invalid user');
+          }
+        });
+    </script>
+
+    <script src="Js/login.js"></script>
+  </body>
+</html>

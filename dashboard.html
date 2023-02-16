@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-teal-400">
+    <h2 class="text-center text-5xl">
+      <span class="text-pink-600">Maisha</span> Joto Iccha Utha
+    </h2>
+
+    <section class="my-9">
+      <div class="grid grid-cols-3 w-9/12 mx-auto gap-4">
+        <div class="mx-auto bg-green-600 text-white w-full p-8 rounded-lg">
+          <h1 class="text-1xl">Deposit</h1>
+          <h4 class="text-6xl">$<span id="deposit-show-amount">00</span></h4>
+        </div>
+        <div class="mx-auto bg-violet-600 text-white w-full p-8 rounded-lg">
+          <h1 class="text-1xl" id="withdraw-balance">withdraw</h1>
+          <h4 class="text-6xl">$<span id="withdraw-amount">00</span></h4>
+        </div>
+        <div
+          class="mx-auto bg-amber-600 text-white w-full p-8 rounded-lg"
+          id="main-balance-background"
+        >
+          <h1 class="text-1xl">Balance</h1>
+          <h4 class="text-6xl">$<span id="main-balance">1240</span></h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- deposit and withdraw -->
+    <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+      <div class="mx-auto bg-orange-400 w-full p-8 rounded-lg">
+        <h1 class="text-1xl block">Please Deposit</h1>
+        <input
+          class="block"
+          type="number"
+          id="deposit-amount"
+          placeholder="$ You Want deposit"
+        />
+        <button class="px-5 py-2 bg-yellow-100 mt-2" id="deposit-button">
+          Deposit
+        </button>
+      </div>
+      <div class="mx-auto bg-red-400 w-full p-8 rounded-lg">
+        <h1 class="text-1xl">Please Withdraw</h1>
+        <input
+          class="block"
+          id="withdraw-field"
+          type="number"
+          placeholder="$ You Want withdraw"
+        />
+        <button class="px-5 py-2 bg-yellow-100 mt-2" id="withdraw-btn">
+          Withdraw
+        </button>
+      </div>
+    </div>
+
+    <!-- transition history -->
+    <section class="my-10">
+      <h1 class="text-center text-3xl">Transition History</h1>
+      <div class="w-3/4 mx-auto grid grid-cols-2" id="history">
+        <div id="comment">
+          <h2 zll>Status</h2>
+        </div>
+        <div id="deposit-transition-history">
+          <h2>Amount</h2>
+        </div>
+      </div>
+    </section>
+    <script src="js/dashboard.js"></script>
+    <script></script>
+  </body>
+</html>
